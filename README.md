@@ -4,8 +4,8 @@
 
 
 ### Built Using
-- React.js (Front-end)
-- SASS and Styled Components (Styling)
+- React.js
+- SASS and Styled Components
 - Redux and Redux Saga (State Management) 
 - Firebase 
 - Stripe API  
