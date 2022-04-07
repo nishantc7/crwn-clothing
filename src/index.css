@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  height: 100vh;
+  /* width:fit-content; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border: 2px solid red; */
+}
+.container{
+ margin-left: -120px;
+  padding: 10px 10px;
+  transition: .4s ease;
+  width:100vw;
+  /* height: 100vh; */
+margin-top:-5.5rem;
+
+}
+.container h1{
+  text-align: center;
+}
+/* .container p{
+  padding: 30px 0;
+} */
+/* Styling the checkbox input */
+#checkbox{
+  position:relative;
+  top: -20px;
+  /* right: 20px; */
+  appearance: none;
+  -webkit-appearance : none;
+  -moz-appearance : none;
+  -o-appearance : none;
+  width: 40px;
+  height: 20px;
+  background: black;
+  border-radius: 22px;
+  cursor: pointer;
+  outline: none;
+}
+
+#checkbox::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background-color:white;
+  border-radius: 35px;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+#checkbox:checked + .container{
+  background: rgb(19, 18, 18);
+  color: white;
+}
+/* #checkbox:checked ~.para{
+  color: whitesmoke;
+} */
+/* moving the checkbox circle when it's toggled by the user */
+#checkbox:checked::before{
+  left: 18px;
+}
+/* changing the color of the checkbox when it's toggled */
+#checkbox:checked{
+  background: rgb(12, 177, 81);
+}
+
+option:link{
+  color: rgb(255, 255, 255);
+}
+
