@@ -9,6 +9,9 @@ import {PersistGate} from 'redux-persist/integration/react'
 import {store, persistor} from './redux/store'
 
 ReactDOM.render(
+  <body>
+      <input type="checkbox" id="checkbox" />
+      <div className="container">
   <Provider store={store}>
 
   <BrowserRouter>
@@ -18,7 +21,8 @@ ReactDOM.render(
   </PersistGate>
   </BrowserRouter>
   </Provider>
-    
+      </div>
+      </body>
     ,
   document.getElementById('root')
 );
